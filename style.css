@@ -1,0 +1,771 @@
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+	
+
+}
+a{
+	text-decoration: none;
+}
+
+/*========================navigationbar==================*/
+.nav{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	border-bottom: 3px crimson solid;
+	display:flex;
+	justify-content: space-around;
+	align-items:center;
+	min-height: 14vh;
+	background-color: #23395d;
+	font-family: 'Poppins', sans-serif;
+	transition: all 0.3s ease;
+}
+.nav.sticky{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	display:flex;
+	justify-content: space-around;
+	align-items:center;
+	min-height: 10vh;
+	background-color: #23395d;
+	font-family: 'Poppins', sans-serif;
+
+}
+.logo{
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 22px;
+}
+.logo span{
+	color: crimson;
+
+}
+.nav-links{
+	font-size: 14px;
+	display: flex;
+	justify-content: space-around;
+	width: 50%;
+	color: white;
+	
+}
+.nav-links a{
+	color:white;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: bold;
+
+}
+.nav-links li{
+	list-style: none;
+	transition: color 0.3s ease;
+}
+.nav-links li a:hover{
+	color: crimson;
+	font-weight: bold;
+}
+.member{
+	
+	text-transform: uppercase;
+}
+.member a{
+	color: white;
+	font-size: 12px;
+	text-decoration: none;
+	font-family: bold;
+}
+.member li{
+	list-style: none;
+	transition: color 0.3s ease;
+}
+.member li a:hover{
+	color: crimson;
+	font-weight: bold;
+}
+
+/*==========================burger==========================*/
+.burger{
+	display: none;
+}
+
+.burger div{
+	width: 25px;
+	height: 2px;
+	background-color: white;
+	margin: 5px;
+	
+}
+
+/*===================== home section styling=================*/
+.home{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	display: flex;
+	background-image: url("blurbg.jpeg");
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+	height: 65vh;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	justify-content: flex-start;
+
+	
+	
+}
+.home-content{
+	justify-content: space-around;
+	text-align: center;
+	margin: auto;
+
+	
+
+}
+.text-1{
+	font-size: 27px;
+	margin: 0px;
+}
+.text-2{
+	font-size: 65px;
+	font-weight: 600;
+	margin: 5px 0;
+}
+.text-3{
+	font-size: 40px;
+}
+.text-3 span{
+	color: crimson;
+	font-weight: bold;
+	font-weight: 500;
+}
+
+/*button hire me */
+.btn12{
+	margin:10px;
+	display: flex;
+	justify-content: center;
+	
+}
+
+.btnhire a{
+	margin: 10px;
+	background-color:white;
+	border: none;
+	
+	color: crimson;
+	padding: 5px;
+	
+	font-size: 20px;
+	cursor: pointer;
+	text-decoration: none;
+}
+.btnhire a:hover{
+	font-size: 22px;
+	font-weight: bold;
+	background-color:crimson;
+	text-decoration: none;
+	color:white;
+	
+}
+.btnresume a{
+	margin-top:9px;
+	background-color: crimson;
+	border: none;
+	
+	color: white;
+	padding: 5px;
+	
+	font-size: 20px;
+	cursor: pointer;
+	text-decoration: none;
+}
+.btnresume a:hover{
+	font-size: 22px;
+	font-weight: bold;
+	background-color: white;
+	text-decoration: none;
+	color:red;
+	
+}
+
+
+
+/*=====================================Subscribe Member======================*/
+.footer1-content{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	background-color:#23395d;
+	height: 8vh;
+	border-bottom:  crimson 2px solid; 
+	border-top: crimson 1px solid;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+ .footer1-content h3{
+	 color: white;
+	 font-size: 23px;
+	 letter-spacing: 2px;
+	 font-family: 'Poppins', sans-serif;
+ }
+.footer1 input[type="email"]{
+	height: 25px;
+	width: 200px;
+	border-radius: 2px;
+	background-color: transparent;
+	border: 1px crimson solid;
+	color: white;
+	box-shadow: 2px 3px crimson;
+	
+}
+.button_1{
+	margin-left: 10px;
+	height: 25px;
+	width: 80px;
+	color:white;
+	background-color: crimson;
+	border-radius: 2px;
+	border: none;
+	box-shadow: 2px 3px rgb(161, 128, 128);
+	cursor: pointer;
+}
+
+/*==========================About Me=======================*/
+
+.about-head h3{
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+	background:-webkit-linear-gradient(45deg,rgb(89, 89, 224),crimson);
+	-webkit-background-clip: text;
+	
+	
+	
+}
+
+
+.about-img{
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+	display: grid;
+	grid-gap:20px;
+	background-color:#f4f4f4;
+	grid-template-areas:
+	'bipin bipin about-me'
+	'bipin bipin about-me2';
+
+}
+
+.bipin{
+	grid-area:bipin;
+	min-width: 400px;
+	background: url("bipin.JPG");
+	background-size: cover;
+	background-position: center;
+	
+	
+}
+.about-me{
+	grid-area:about-me;
+	display: grid;
+	width: 90%;
+	height: 40vh;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+}
+.about-me p{
+	text-align: center;
+	font-size: 1.1rem;
+	border: 1px solid crimson;
+}
+.about-me2{
+	grid-area:about-me2;
+	display: grid;
+	width: 90%;
+	height: 40vh	;
+	margin: auto;
+	background:#23395d;
+	align-items: center; 
+	
+}
+.about-me2 p{
+	text-align: center;
+	padding: 20px;
+	color: white;
+	
+
+}
+
+.about-box h3{
+	text-align: center;
+	padding: 5px;
+}
+.about-box span{
+	color: crimson;
+}
+.about-me2 a {
+	text-align: center;
+	background-color: crimson;
+	padding: 8px;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+	
+}
+.about-me2 a:hover{
+	background-color:rgb(150, 135, 138) ;
+	text-decoration: none;
+	color: rgb(229, 226, 227);
+	font-weight: bolder;
+}
+
+
+/*========================service-box=======================*/
+
+
+
+.quotes-box{
+	width: 90%;
+	margin: auto;
+	margin-top: 20px;
+}
+.quotes{
+
+	display: grid;
+	grid-gap:20px;
+	grid-template-areas:
+	'top-box right-box '
+	'bottom-box right-box';
+}
+
+.top-box{
+	grid-area: top-box;
+	border: #cccccc solid 1px;
+	background: #e6e6e6;
+
+}
+.top-box img{
+	min-width: 50px;
+	max-height: 50px;
+}
+.bottom-box{
+	grid-area: bottom-box;
+	border: #cccccc solid 1px;
+	background: #e6e6e6;
+}
+.bottom-box img{
+	min-width: 50px;
+	max-height: 50px;
+}
+
+.right-box{
+	background:#23395d; 
+	padding:10px;
+	height: 300px;
+	
+}
+.btn11{
+	padding: 0.2rem 1rem;
+	margin-left: 60px;
+	
+}
+.quote-form{
+	color: white;
+}
+.right-box h3{
+	color: white;
+	text-align: center;
+}
+.services-box{
+	width: 95%;
+	margin: auto;
+}
+.service-title h3{
+	text-align: center;
+	font-size: 2.2rem;
+	margin: 2rem;
+	border-bottom: crimson solid 2px;
+}
+.card-box{
+	display: grid;
+	grid-gap:20px;
+	grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+	
+	
+	
+	height: 50vh;
+	
+	
+}
+.card{
+	text-align: center;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+	
+
+}
+.card:hover{
+	background-color: crimson;
+	color: white;
+}
+.card img{
+	width: 6em;
+}
+.btnreadmore{
+	background: #23395d;
+	color: white;
+	padding: 0.6rem 1.3rem;
+	text-decoration: none;
+}
+.btnreadmore:hover{
+	text-decoration: none;
+	color:white;
+	background:rgb(109, 94, 97)
+
+}
+/*===============================skills======================*/
+.myskill h3{
+	text-align: center;
+	margin: 10px;
+}
+.skill1{
+	border: #cccccc solid 1px;
+	background: #e6e6e6;
+	margin: 10px;
+
+}
+.skill1 h4{
+	text-align: center;
+}
+.skill p{
+	text-align: center;
+}
+.skill2{
+	background: #e6e6e6;
+	margin: 20px;
+}
+.skill2 h4{
+	text-align: center;
+}
+.skill2 li{
+	list-style: none;
+	display: flex;
+	flex-direction: initial;
+	justify-content: space-around;
+}
+
+/*============================team=====================*/
+
+.teampage{
+	width: 90%;
+	margin: auto;
+	margin-top: 20px;
+}
+.team-card{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+	height: 50vh;
+}
+
+.team-member{
+	text-align: center;
+	align-items: center;
+	box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+	border: #23395d solid 2px;
+}
+.team-member h4 h5{
+	text-align: center;
+}
+.team-member p{
+	text-align: center;
+}
+/*==================Signin=====================*/
+.signinform{
+	background-image: url("signin.JPG");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100vw;
+	height: 90vh;
+}
+
+.signinform{
+	
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	
+}
+.signinform form{
+	border: solid 1px black;
+	position: absolute;
+	top: 60%;
+	left:50%;
+	width: 400px;
+	height: 500px;
+	transform:translate(-50%,-50%);
+	padding: 80px 40px;
+	box-sizing: border-box;
+	background:rgba(255,255,255,.2);
+	box-shadow: 0 5px 15px rgba(0,0,0,.2);
+	margin: 0px;
+	overflow: hidden;
+}
+.signinform form h3{
+	text-align: center;
+}
+.signinform input[type="email"],
+.signinform input[type="password"]
+{
+	width: 100%;
+	border:none;
+	border-bottom: solid 1px black;
+	background:transparent; 
+	height: 40px;
+	font-size: 16px;
+	color: black;
+}
+
+
+
+.btnreadmore1{
+	width: 100%;
+	padding:0.6rem ;
+	background: crimson;
+	border: none;
+	color:white;
+
+}
+.btnreadmore3{
+	width: 100%;
+	padding: 0.6rem 8.3rem;
+	background:#23395d;
+	border: none;
+	color:white;
+	text-decoration: none;
+
+}
+
+
+/*===========================contact==================*/
+.contact-section{
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	min-width: 100vh;
+	background: white;
+
+}
+.contact-section::before{
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 90vh;
+	background: #23395d;
+}
+.left-contact{
+	
+	position: relative;
+	float: right;
+	margin-top: 90px;
+	margin-right: 200px;
+	min-width: 20rem;
+	min-height: 30rem;
+	border: #23395d solid 1px;
+	border-radius: 0 20px 0 20px;
+	z-index: 2;
+	background: #23395d;
+	box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+}
+.contact-form2{
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+.formbox{
+	margin-left:120px;
+	margin-top: 70px;
+	background: white;
+	min-width: 90vh;
+	min-height: 70vh;
+	border: #23395d solid 1px;
+	z-index: 1;
+	box-shadow: 0 1px 5px rgba(39, 38, 38, 0.8);
+}
+form{
+	margin-left: 50px;
+}
+.formbox h4{
+	text-align: center;
+	border-bottom: solid 1px crimson;
+	width: 90%;
+	margin: auto;
+	margin-top: 10px;
+}
+.textarea1 {
+	width: 61vh;
+}
+.formbox input[type="text"],
+.formbox input[type="email"]
+
+{
+	text-align:initial;
+	font-weight: bold;
+	width: 61vh;
+	border: none;
+	border-bottom: solid 1px #23395d;
+	
+}
+.btn01{
+	padding: 0.6rem 12.5rem;
+	border-bottom: 2px solid #23395d;
+	color: white;
+	background:#92a2bb;
+	
+}
+.btn01:hover{
+	background: #23395d;
+	text-decoration: none;
+	color: white;
+}
+
+
+.left-contact h4{
+	margin-top: 40px;
+	color:white;
+	text-align: center;
+	border-bottom: crimson solid 1px;
+}
+
+.address{
+	color:white;
+	text-align: center;
+
+}
+.email{
+	color:white;
+	text-align: center;
+
+}
+.phno{
+	color:white;
+	text-align: center;
+
+}
+.contact-icon li{
+	list-style: none;
+	display: inline;
+	padding: 1.4rem;
+	text-decoration: none;
+}
+.contact-icon {
+	margin-top: 100px;
+}
+.contact-icon a {
+	color:white;
+}
+.contact-icon a :hover{
+	color:white;
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+.foot3{
+	background:crimson;
+	padding: 1rem 2rem;
+	text-align: center;
+	color: white;
+	margin-top: 80px;
+	z-index: 11;
+
+}
+
+
+/*======================footer=============*/
+
+footer{
+	
+	background:crimson;
+	padding: 1rem 2rem;
+	text-align: center;
+	color: white;
+}
+
+
+/*============================@media==========================
+@media screen and (max-width:1024px){
+	.nav-links{
+		width: 60%;
+	}
+
+	
+}
+
+@media screen and (max-width:768px){
+	body{
+		overflow: hidden;
+	}
+	.nav-links{
+		position: absolute;
+		right:0px;
+		height: 92vh;
+		top: 8vh;
+		background-color:#23395d;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		transform:translate(100%);
+		transition: transform 0.5s ease-in;
+		
+		
+	}
+	.nav-links li{
+		opacity: 0;
+	}
+	
+
+	.burger{
+		display: block;
+		cursor: pointer;
+
+	}
+	
+}
+
+.nav-active{
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translate(50px);
+
+	}
+	to{
+		opacity: 1;
+		transform: translate(0px);
+
+	}
+}
+*/
